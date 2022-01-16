@@ -17,7 +17,7 @@ function MainCard() {
   }; 
   
 
-  const API_URL = `https://api.nasa.gov/planetary/apod?api_key=Ad11TXjVatfdqCDjuSVe1R97qZdSIDhFuFPEmTht`
+  const API_URL = `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY} `
   
   useEffect(() => {
     async function fetchData() {
