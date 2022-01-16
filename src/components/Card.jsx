@@ -14,7 +14,8 @@ function MainCard() {
   const toggleLike = () => {
     setLike(!like)
     localStorage.setItem(setLike);
-  };  
+  }; 
+  
 
   const API_URL = `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}`
   
@@ -52,13 +53,14 @@ function MainCard() {
           </Card.Text>
           <Button 
             variant="primary" 
-            onClick={toggleLike} active
-            
+            onClick={toggleLike} active           
           >
-            {like ? "Like" : <FontAwesomeIcon
-            icon={faThumbsUp}
-            style={{ paddingRight: 1 }}
-          />}
+            
+            {like ? "Like" : 
+            <FontAwesomeIcon
+              icon={faThumbsUp}
+              style={{ paddingRight: 1 }}
+            />}
           </Button>
           <Button 
             style={{marginLeft: '2em'}}
