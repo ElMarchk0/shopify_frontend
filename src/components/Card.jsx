@@ -36,7 +36,7 @@ function MainCard() {
   return (
     <div className="col d-flex justify-content-center">
       <Card 
-        style={{ height: '50%', width: '50%', marginTop: '2em'}}
+        style={{ height: '80%', margin: '2em'}}
         className="mb-2"
         bg="dark"
         text="light"
